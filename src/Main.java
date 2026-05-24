@@ -90,19 +90,36 @@ public class Main {
 
         System.out.println("Задание 6");
         byte weightBanan = 80;
-        byte weightMilk100 = 105;
-        byte weighIceCream = 100;
+        byte weightMilkPortion = 105;
+        byte milkPortionMl = 100;
+        byte weighIceCreamBar = 100;
         byte weightEgg = 70;
-        System.out.println("Вес поштучно каждого продукта для спортзавтрака: 1 банан " + weightBanan + " грамм; 100 мл молока " + weightMilk100 + " грамм; 1 брекет пломбира " + weighIceCream + " грамм; 1 сырого яйца " + weightEgg + " грамм ");
+        System.out.println("1 порция молока " + milkPortionMl + " мл.");
+        System.out.println("Вес поштучно каждого продукта для спортзавтрака: 1 банан " + weightBanan + " грамм; 1 порция молока " + weightMilkPortion + " грамм; 1 брекет пломбира " + weighIceCreamBar + " грамм; 1 сырого яйца " + weightEgg + " грамм ");
         byte allBanans = 5;
-        short allMilk = 2;
-        byte allIceCream = 2;
+        short allMilkPortions = 2;
+        byte allIceCreamBars = 2;
         byte allEggs = 4;
-        System.out.println("Для завтрака спортсмену потребуется: бананов " + allBanans + " шт.; молока " + allMilk + " мл; брекетов помбира " + allIceCream + " шт.; сырых яиц " + allEggs + " шт. ");
-        int allFoodWeight = ((weightBanan * allBanans) + (weightMilk100 * allMilk) + (weighIceCream * allIceCream) + (weightEgg * allEggs));
+        System.out.println("Для завтрака спортсмену потребуется: бананов " + allBanans + " шт.; молока " + allMilkPortions + " порции; брекетов помбира " + allIceCreamBars + " шт.; сырых яиц " + allEggs + " шт. ");
+        int allFoodWeight = ((weightBanan * allBanans) + (weightMilkPortion * allMilkPortions) + (weighIceCreamBar * allIceCreamBars) + (weightEgg * allEggs));
         System.out.println("Вес завтрака спортсмена " + allFoodWeight + " граммов");
         float allFoodWeightKg = allFoodWeight / 1000F;
         System.out.println("Вес завтрака спортсмена " + allFoodWeightKg + " килограмм");
+
+
+        System.out.println("Задание 7");
+        byte weightLossKg = 7;
+        int weightLossGr = weightLossKg * 1000;
+        int dailyWeightLossGr1 = 250;
+        int dailyWeightLossGr2 = 500;
+        System.out.println("Спортсмену нужно сбросить " + weightLossKg + " кг. Переводим вес в граммы. Получаем " + weightLossGr + " грамм.");
+        System.out.println("2 рациона питания для сброса веса. По первому рациону спортсмен теряет " + dailyWeightLossGr1 + " грамм в день. По второму " + dailyWeightLossGr2 + " грамм в день");
+        int daysDailyRation1 = weightLossGr / dailyWeightLossGr1;
+        int daysDailyRation2 = weightLossGr / dailyWeightLossGr2;
+        int averageDays = ((daysDailyRation1 + daysDailyRation2)/ 2 );
+        System.out.println("Для нужной потери веса по первому рациону спортсмену потребуется " + daysDailyRation1 + " дней");
+        System.out.println("Для нужной потери веса по второму рациону спортсмену потребуется " + daysDailyRation2 + " дней");
+        System.out.println("Для нужной потери веса спортсмену в среднем потребуется " + averageDays + " день");
 
 
     }
