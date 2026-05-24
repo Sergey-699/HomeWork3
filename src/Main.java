@@ -9,12 +9,12 @@ public class Main {
         long d = 100254762L;
         float e = 2.75f;
         double f = 5.123456789d;
-        System.out.println("a " + "= " + a);
-        System.out.println("b " + "= " + b);
-        System.out.println("c " + "= " + c);
-        System.out.println("d " + "= " + d);
-        System.out.println("e " + "= " + e);
-        System.out.println("f " + "= " + f);
+        System.out.println("Значение переменной a с типом byte равно " + a);
+        System.out.println("Значение переменной b с типом short равно " + b);
+        System.out.println("Значение переменной c с типом int равно " + c);
+        System.out.println("Значение переменной d с типом long равно " + d);
+        System.out.println("Значение переменной e с типом float равно " + e);
+        System.out.println("Значение переменной f с типом double равно " + f);
 
 
         System.out.println("Задание 2");
