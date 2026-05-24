@@ -17,5 +17,21 @@ public class Main {
         System.out.println("Значение f: " + f);
 
 
+        System.out.println("Задание 2");
+        float x = 27.12F;
+        long y = 987678965549L;
+        double w = 2.786;
+        short g = 569;
+        short h = -159;
+        short i = 27897;
+        byte j = 67;
+        System.out.println("Значение x: " + x);
+        System.out.println("Значение y: " + y);
+        System.out.println("Значение w: " + w);
+        System.out.println("Значение g: " + g);
+        System.out.println("Значение h: " + h);
+        System.out.println("Значение i: " + i);
+        System.out.println("Значение j: " + j);
+
     }
 }
