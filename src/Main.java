@@ -73,6 +73,22 @@ public class Main {
         System.out.println("За " + workingMinutes5 + " минут машина произвела " + bottles5 + " штук бутылок");
 
 
+        System.out.println("Задание 5");
+        byte allCans = 120;
+        System.out.println("Всего на ремонт школы закупили " + allCans + " банок белой и коричневой краски");
+        byte whiteCans = 2;
+        byte brownCans = 4;
+        System.out.println("На один класс уходит " + whiteCans + " банки белой краски " + brownCans + " банки коричневой краски");
+        int cansPerClass = whiteCans + brownCans;
+        System.out.println("На один класс уходит " + cansPerClass + " банок белой и коричневой красок");
+        int allClass = allCans / cansPerClass;
+        System.out.println("Всего закупили краски двух цветов для ремонта " + allClass + " класов");
+        int allWhiteCans = whiteCans * allClass;
+        int allBrownCans = brownCans * allClass;
+        System.out.println("В школе, где " + allClass + " классов, нужно " + allWhiteCans + " банок белой краски и " + allBrownCans + " банок коричневой краски" );
+
+
+
 
     }
 }
