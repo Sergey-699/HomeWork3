@@ -54,7 +54,7 @@ public class Main {
         System.out.println("В одном месяце " + daysMonth + " суток");
         int bottles1 = 16;
         int workingMinutes1 = 2;
-        int  bottlesPerMinute = bottles1 / workingMinutes1;
+        int bottlesPerMinute = bottles1 / workingMinutes1;
         System.out.println("За 1 минуту машина произвела " + bottlesPerMinute + " штук бутылок");
         int workingMinutes2 = 20;
         int bottles2 = workingMinutes2 * bottlesPerMinute;
@@ -63,11 +63,11 @@ public class Main {
         int bottles3 = workingMinutes3 * bottlesPerMinute;
         System.out.println("В сутках " + workingMinutes3 + " минут");
         System.out.println("За " + workingMinutes3 + " минут машина произвела " + bottles3 + " штук бутылок");
-        int workingMinutes4 = ((hoursDay*minutesHour) * 3);
+        int workingMinutes4 = ((hoursDay * minutesHour) * 3);
         int bottles4 = workingMinutes4 * bottlesPerMinute;
         System.out.println("В 3 сутках " + workingMinutes4 + " минут");
         System.out.println("За " + workingMinutes4 + " минут машина произвела " + bottles4 + " штук бутылок");
-        int workingMinutes5 = ((daysMonth*hoursDay) * minutesHour);
+        int workingMinutes5 = ((daysMonth * hoursDay) * minutesHour);
         int bottles5 = workingMinutes5 * bottlesPerMinute;
         System.out.println("В 1 месяце " + workingMinutes5 + " минут");
         System.out.println("За " + workingMinutes5 + " минут машина произвела " + bottles5 + " штук бутылок");
@@ -82,12 +82,27 @@ public class Main {
         int cansPerClass = whiteCans + brownCans;
         System.out.println("На один класс уходит " + cansPerClass + " банок белой и коричневой красок");
         int allClass = allCans / cansPerClass;
-        System.out.println("Всего закупили краски двух цветов для ремонта " + allClass + " класов");
+        System.out.println("Всего закупили краски двух цветов для ремонта " + allClass + " классов");
         int allWhiteCans = whiteCans * allClass;
         int allBrownCans = brownCans * allClass;
-        System.out.println("В школе, где " + allClass + " классов, нужно " + allWhiteCans + " банок белой краски и " + allBrownCans + " банок коричневой краски" );
+        System.out.println("В школе, где " + allClass + " классов, нужно " + allWhiteCans + " банок белой краски и " + allBrownCans + " банок коричневой краски");
 
 
+        System.out.println("Задание 6");
+        byte weightBanan = 80;
+        byte weightMilk100 = 105;
+        byte weighIceCream = 100;
+        byte weightEgg = 70;
+        System.out.println("Вес поштучно каждого продукта для спортзавтрака: 1 банан " + weightBanan + " грамм; 100 мл молока " + weightMilk100 + " грамм; 1 брекет пломбира " + weighIceCream + " грамм; 1 сырого яйца " + weightEgg + " грамм ");
+        byte allBanans = 5;
+        short allMilk = 2;
+        byte allIceCream = 2;
+        byte allEggs = 4;
+        System.out.println("Для завтрака спортсмену потребуется: бананов " + allBanans + " шт.; молока " + allMilk + " мл; брекетов помбира " + allIceCream + " шт.; сырых яиц " + allEggs + " шт. ");
+        int allFoodWeight = ((weightBanan * allBanans) + (weightMilk100 * allMilk) + (weighIceCream * allIceCream) + (weightEgg * allEggs));
+        System.out.println("Вес завтрака спортсмена " + allFoodWeight + " граммов");
+        float allFoodWeightKg = allFoodWeight / 1000F;
+        System.out.println("Вес завтрака спортсмена " + allFoodWeightKg + " килограмм");
 
 
     }
