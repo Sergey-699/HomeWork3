@@ -159,6 +159,5 @@ public class Main {
         System.out.println("После увеличения зарплаты Кристина получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + annualIncomeGrowthKristina + " рублей");
 
 
-
     }
 }
