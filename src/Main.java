@@ -116,10 +116,48 @@ public class Main {
         System.out.println("2 рациона питания для сброса веса. По первому рациону спортсмен теряет " + dailyWeightLossGr1 + " грамм в день. По второму " + dailyWeightLossGr2 + " грамм в день");
         int daysDailyRation1 = weightLossGr / dailyWeightLossGr1;
         int daysDailyRation2 = weightLossGr / dailyWeightLossGr2;
-        int averageDays = ((daysDailyRation1 + daysDailyRation2)/ 2 );
+        int averageDays = ((daysDailyRation1 + daysDailyRation2) / 2);
         System.out.println("Для нужной потери веса по первому рациону спортсмену потребуется " + daysDailyRation1 + " дней");
         System.out.println("Для нужной потери веса по второму рациону спортсмену потребуется " + daysDailyRation2 + " дней");
         System.out.println("Для нужной потери веса спортсмену в среднем потребуется " + averageDays + " день");
+
+
+        System.out.println("Задание 8");
+        int salaryMasha = 67760;
+        System.out.println("Зарплата Маши до увеличения " + salaryMasha);
+        int salaryDenis = 83690;
+        System.out.println("Зарплата Дениса до увеличения " + salaryDenis);
+        int salaryKristina = 76230;
+        System.out.println("Зарплата Кристины до увеличения " + salaryKristina);
+        float percent = 0.10F;
+        System.out.println("Увеличение зарплаты на 10% ");
+
+        float increaseMasha = salaryMasha * percent;
+        float increaseDenis = salaryDenis * percent;
+        float increaseKristina = salaryKristina * percent;
+
+        float newSalaryMasha = salaryMasha + increaseMasha;
+        float newSalaryDenis = salaryDenis + increaseDenis;
+        float newSalaryKristina = salaryKristina + increaseKristina;
+
+        float annualIncomeMasha = salaryMasha * 12;
+        float annualIncomeDenis = salaryDenis * 12;
+        float annualIncomeKristina = salaryKristina * 12;
+
+
+        float newAnnualIncomeMasha = newSalaryMasha * 12;
+        float newAnnualIncomeDenis = newSalaryDenis * 12;
+        float newAnnualIncomeKristina = newSalaryKristina * 12;
+
+
+        float annualIncomeGrowthMasha = newAnnualIncomeMasha - annualIncomeMasha;
+        float annualIncomeGrowthDenis = newAnnualIncomeDenis - annualIncomeDenis;
+        float annualIncomeGrowthKristina = newAnnualIncomeKristina - annualIncomeKristina;
+
+        System.out.println("После увеличения зарплаты Маша получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + annualIncomeGrowthMasha + " рублей");
+        System.out.println("После увеличения зарплаты Денис получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + annualIncomeGrowthDenis + " рублей");
+        System.out.println("После увеличения зарплаты Кристина получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + annualIncomeGrowthKristina + " рублей");
+
 
 
     }
