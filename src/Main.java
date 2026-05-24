@@ -33,5 +33,17 @@ public class Main {
         System.out.println("Значение i: " + i);
         System.out.println("Значение j: " + j);
 
+
+        System.out.println("Задание 3");
+        byte students1 = 23;
+        byte students2 = 27;
+        byte students3 = 30;
+        int allPaper = 480;
+        int allStudents = students1 + students2 + students3;
+        System.out.println("Всего учеников в трёх классах " + allStudents + " человек");
+        int studentPaper = allPaper / allStudents;
+        System.out.println("На каждого ученика рассчитано " + studentPaper + " листов бумаги");
+
+
     }
 }
