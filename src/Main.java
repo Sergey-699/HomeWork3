@@ -45,5 +45,34 @@ public class Main {
         System.out.println("На каждого ученика рассчитано " + studentPaper + " листов бумаги");
 
 
+        System.out.println("Задание 4");
+        int minutesHour = 60;
+        int hoursDay = 24;
+        int daysMonth = 30;
+        System.out.println("В одном часе " + minutesHour + " минут");
+        System.out.println("В одних сутках " + hoursDay + " часа");
+        System.out.println("В одном месяце " + daysMonth + " суток");
+        int bottles1 = 16;
+        int workingMinutes1 = 2;
+        int  bottlesPerMinute = bottles1 / workingMinutes1;
+        System.out.println("За 1 минуту машина произвела " + bottlesPerMinute + " штук бутылок");
+        int workingMinutes2 = 20;
+        int bottles2 = workingMinutes2 * bottlesPerMinute;
+        System.out.println("За " + workingMinutes2 + " минут машина произвела " + bottles2 + " штук бутылок");
+        int workingMinutes3 = hoursDay * minutesHour;
+        int bottles3 = workingMinutes3 * bottlesPerMinute;
+        System.out.println("В сутках " + workingMinutes3 + " минут");
+        System.out.println("За " + workingMinutes3 + " минут машина произвела " + bottles3 + " штук бутылок");
+        int workingMinutes4 = ((hoursDay*minutesHour) * 3);
+        int bottles4 = workingMinutes4 * bottlesPerMinute;
+        System.out.println("В 3 сутках " + workingMinutes4 + " минут");
+        System.out.println("За " + workingMinutes4 + " минут машина произвела " + bottles4 + " штук бутылок");
+        int workingMinutes5 = ((daysMonth*hoursDay) * minutesHour);
+        int bottles5 = workingMinutes5 * bottlesPerMinute;
+        System.out.println("В 1 месяце " + workingMinutes5 + " минут");
+        System.out.println("За " + workingMinutes5 + " минут машина произвела " + bottles5 + " штук бутылок");
+
+
+
     }
 }
